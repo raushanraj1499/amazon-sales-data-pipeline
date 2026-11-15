@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Airflow and generated pipeline data
+logs/
+data/raw/
+data/processed/
+data/gold/
+airflow.db
+airflow.cfg
+webserver_config.py
+
+# Keep empty data directories documented in Git
+!data/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
